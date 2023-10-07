@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+.calc__input:focus,
+.calc__input:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.container {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: inline-block;
+    margin:  0 auto;
+}
+
+.buttons {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, auto);
+}
+
+.operations {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 10px;
+}
+
+.wrapper {
+    display: grid;
+    gap: 10px;
+    padding: 15px;
+    background: #000;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.calc__btn-num {
+    padding: 10px;
+    background: inherit;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.calc__btn-oper {
+    padding: 10px;
+    background: inherit;
+    color: #008000;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* .calc__btn-oper:nth-child(5) {
+    grid-column: 1 / -1;
+} */
+
+
+
+
+.calc__reset {
+    padding: 10px;
+    background: inherit;
+    color: #FF0000;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.calc__reset-str {
+    padding: 10px;
+    background: inherit;
+    color: #FF0000;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.calc__input,
+.calc__output {
+    background: #89AC76;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+.calc__output {
+    min-height: 38px;
+    line-height: 18px;
+    width: 215px;
+}
+.open {
+    display: block;
+}
+
+.focus {
+    background: #fff;
+    color: #000;
+    border: 1px solid #ff0000;
+}
+
+.calc__btn-oper:active,
+.calc__btn-num:active,
+.calc__reset:focus,
+.modal__btn-no:active,
+.modal__btn-ok:active {
+    background: #fff;
+    color: #000;
+    border: 1px solid #ff0000;
+}
+
+
+.modal {
+    pointer-events: all;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 500px;
+    padding: 10px;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+
+.modal__title {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #ff0000;
+}
+
+.modal__buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.modal__buttons button {
+    padding: 10px;
+    width: 100%;
+    background: inherit;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
