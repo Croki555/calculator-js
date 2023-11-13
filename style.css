@@ -103,7 +103,7 @@ li {
 .calc__output {
     min-height: 38px;
     line-height: 18px;
-    width: 215px;
+    width: 100%;
 }
 .open {
     display: block;
